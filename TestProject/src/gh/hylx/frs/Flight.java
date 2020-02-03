@@ -12,5 +12,4 @@ public class Flight {
 	ArrayList<Integer> c_list = new ArrayList<>(c_size);  // confirmation list
 	ArrayList<Integer> w_queue = new ArrayList<>(w_size); // waiting list
 	
-
 }

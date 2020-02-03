@@ -1,7 +1,5 @@
 package gh.hylx.frs;
 
-import java.util.ArrayList;
-
 public class FlightReservationSystem {
 	
 	static void bookFlight(Passenger p, Flight f) {
@@ -81,6 +79,7 @@ public class FlightReservationSystem {
 		System.out.println("Waiting queue size: " + ff.w_queue.size());
 		cancelFlight(pp3, ff);		//Removed from waiting queue.
 		cancelFlight(pp5, ff);		//You don't have flight yet. 
+		
 	}
 }
 

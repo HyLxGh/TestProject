@@ -3,7 +3,6 @@ package gh.hylx.frs;
 public class Passenger {
 	int id;
 	String name;
-
 	
 	public String getName() {
 		return name;
