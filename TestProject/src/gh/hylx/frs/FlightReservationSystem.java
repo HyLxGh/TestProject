@@ -70,17 +70,17 @@ public class FlightReservationSystem {
 		Passenger pp5 = new Passenger();
 		pp5.id = 35;	
 
-		bookFlight(pp1, ff);
-		bookFlight(pp2, ff);
-		bookFlight(pp3, ff);		
-		bookFlight(pp4, ff);
-		bookFlight(pp5, ff);
+		bookFlight(pp1, ff);		//You already have a reservation for the flight.
+		bookFlight(pp2, ff);		//Added to reservation list. 
+		bookFlight(pp3, ff);		//Confirmation list is full now, added to waiting queue. 
+		bookFlight(pp4, ff);		//You already in the waiting queue.
+		bookFlight(pp5, ff);		//Both are full
 		System.out.println(ff.c_list.get(0));
-		cancelFlight(pp2, ff);
+		cancelFlight(pp2, ff);		//Reservation cancelled.
 		System.out.println("Confirmation list size: " + ff.c_list.size());
 		System.out.println("Waiting queue size: " + ff.w_queue.size());
-		cancelFlight(pp3, ff);
-		cancelFlight(pp5, ff);
+		cancelFlight(pp3, ff);		//Removed from waiting queue.
+		cancelFlight(pp5, ff);		//You don't have flight yet. 
 	}
 }
 
